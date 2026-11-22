@@ -1,3 +1,4 @@
+# se requiere valudar las librerias para PI5
 import time
 from board import SCL, SDA
 import busio
