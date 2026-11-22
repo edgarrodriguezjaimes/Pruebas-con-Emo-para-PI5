@@ -1,0 +1,17 @@
+Emo PI4 a PI5
+
+Pasos obligatorios en la Raspberry Pi 5 antes de arrancar el script:
+Para que el script corra sin errores de librerías en el nuevo entorno, ejecuta estos comandos en la terminal de tu Pi 5:
+
+Crea y activa el entorno virtual de Python (obligatorio en el nuevo sistema operativo Bookworm):
+
+Bash
+python3 -m venv emobot_env
+source emobot_env/bin/activate
+(Recuerda que cada vez que abras una terminal nueva para ejecutar el robot, deberás usar el comando source emobot_env/bin/activate).
+
+Instala las librerías necesarias dentro del entorno:
+
+Bash
+pip install adafruit-circuitpython-servokit gpiozero spidev pillow
+Verifica la librería de la pantalla: Asegúrate de que la carpeta local lib donde está LCD_2inch.py se encuentre en la misma ruta relativa (..) que busca tu script. Como esa librería suele usar spidev, se comunicará bien a través del bus SPI clásico siempre y cuando tengas el SPI activado en el sudo raspi-config.

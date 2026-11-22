@@ -1,0 +1,13 @@
+emo
+
+Para conectar una pantalla TFT de 240x320 píxeles con interfaz SPI al Raspberry Pi 5, sigue estos pasos:
+Conecta la pantalla LCD a Raspberry Pi: 
+
+Alinea los pines de la pantalla LCD con los pines GPIO de la Raspberry Pi y presiona suavemente para conectarlos. Asegúrate de que todos los pines estén conectados de forma segura.
+
+Habilita la interfaz SPI: Abre la terminal y ejecuta sudo raspi-config. Navega a 'Opciones de interfaz', selecciona 'SPI', elige 'Activar' y luego 'Aceptar' para guardar los cambios.
+
+Instala los controladores: Clona un repositorio de GitHub y ejecuta un script para configurar la pantalla. Asegúrate de seguir las instrucciones específicas del fabricante para la pantalla que estás utilizando.
+
+Reinicia y verifica: Reinicia tu Raspberry Pi y verifica que la pantalla se visualice correctamente. Si es necesario, ajusta la configuración de la interfaz SPI en la configuración de Raspberry Pi.
+Recuerda que la compatibilidad de la pantalla con tu modelo de Raspberry Pi es crucial para asegurar un funcionamiento óptimo.
